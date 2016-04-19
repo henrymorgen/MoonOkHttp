@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
         Call call = null;
         call = mOkHttpClient.newCall(request);
         final Call finalCall = call;
-        //每100毫秒不断的取消call
+        //100毫秒后取消call
         executor.schedule(new Runnable() {
             @Override
             public void run() {
